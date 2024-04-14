@@ -51,12 +51,27 @@ img {
 /* ---------- description ---------- */
 
 .taste-of-the-season {
-    background-color: rgb(55, 71, 66);
-    color: white;
+    color: #fff;
+    background-color: #1e3932;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    flex-direction: column;
     text-align: center;
-    align-items: center;
+    padding: 76px 120px;
+}
+
+.taste-subtitle-top {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 28px;
+    margin-bottom: 45px;
+}
+
+.taste-subtitle-bottom {
+    font-family: sans-serif;
+    font-size: 18px;
+    margin-bottom: 45px;
 }
 
 /* ---------- cards ---------- */
@@ -247,6 +262,14 @@ img {
     flex: 1;
     font-size: 16px;
     text-align: left;
+    padding: 0;
+}
+
+.subtitle-news {
+    color: #fff;
+    text-align: left;
+    font-family: "Cutive", serif;
+    font-size: 62px;
     padding: 0;
 }
 
@@ -451,6 +474,24 @@ img {
         margin-bottom: 10px;
     }
 
+    /* ------------- */
+
+    .taste-of-the-season {
+        padding: 76px 50px;
+    }
+
+    .taste-subtitle-top {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .taste-subtitle-bottom {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    /* ------------- */
+
     .produtos {
         flex-direction: column;
         align-items: center;
@@ -481,6 +522,11 @@ img {
     }
 
     .news-row h2 {
+        text-align: center;
+    }
+
+    .subtitle-news {
+        font-size: 42px;
         text-align: center;
     }
 
