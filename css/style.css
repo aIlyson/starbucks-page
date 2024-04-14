@@ -1,16 +1,58 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
+@import url("/css/media.css");
+@import url("/css/media.css");
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.42857143;
+    font-size: 1.4rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.title-top {
+    color: #006241;
+    font-size: 15px;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold !important;
+    letter-spacing: .25em;
+    padding: 0 20px;
+}
+
+.title-bottom {
+    color: #1e3932;
+    text-align: center;
+    font-family: "Cutive", serif;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 20px;
 }
 
 .menu {
     background-color: rgb(9, 51, 22);
 }
 
+/* ---------- carousel ---------- */
 .carrossel {
     background-color: rgb(29, 75, 50);
 }
 
-.container {
+/* ---------- description ---------- */
+
+.taste-of-the-season {
     background-color: rgb(55, 71, 66);
     color: white;
     display: flex;
@@ -19,123 +61,151 @@ body {
     align-items: center;
 }
 
-.container2 {
-    justify-content: center;
+/* ---------- cards ---------- */
+
+.content {
     text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.container2 .content p {
-    margin: 0px 0px 10px;
+.content-title {
+    margin-bottom: 40px;
+}
+
+.content-title h2 {
+    margin: 0;
 }
 
 .produtos {
     display: flex;
-    justify-content: center;
-    padding: 0px 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .card {
-    width: 307px;
-    margin-inline: 70px;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
+    display: flex;
     flex-direction: column;
-    color: #1e3932;
+    justify-content: space-between;
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 
-.produto {
-    height: 300px;
-}
-
-.descricao {
-    height: 248px;
-}
-
-.descricao a {
-    font-size: 1.3em;
+.card a {
+    display: block;
+    text-align: center;
     text-decoration: none;
-    color: #1e3932;
 }
 
-.descricao a:hover {
+.card span {
+    color: #1E3932;
+    font-size: 16px;
+    text-align: center;
+    margin: 0px 0px 10px;
+}
+
+.produtos-item {
+    color: #1e3932;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 5px 0;
+    word-wrap: break-word;
+}
+
+.produtos-item:hover {
     text-decoration: underline;
 }
 
-.descricao p {
-    margin: 0px 0px 10px;
-    color: #1e3932;
-}
-
 .avaliacao {
-    margin: 0px 0px 15px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
-.avaliacao a {
-    color: #1e3932;
+.icons {
+    color: #CDCBC8;
+    margin-right: 5px;
 }
 
-.avaliacao .icons {
+.icons i {
     font-size: 15px;
-    margin-right: 15px;
-    color: rgb(201, 199, 199);
 }
 
-.preco {
-    margin: 10px 0px 25px;
+.star-view {
+    font-size: 16px;
+    padding-top: 5px;
 }
 
-.preco span {
-    margin-right: 10px;
+.price {
+    font-weight: normal;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 25px;
 }
 
 .carrinho {
-    align-items: center;
     display: flex;
-    justify-content: center;
-    height: 50px;
-}
-
-.carrinho .qt {
-    margin-right: 20px;
-    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 .qt {
     display: flex;
     align-items: center;
-    text-align: center;
-}
-
-.qt buttom {
-    height: 30px;
-    width: 30px;
-    font-weight: bolder;
-    color: green;
-    border: 1px solid green;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .qt p {
-    padding-inline: 15px;
-    padding-top: 6px;
+    font-size: 20px;
+    padding: 0px 10px 0px 10px;
 }
 
-.adicionar buttom {
-    background-color: green;
+.qt button {
+    background-color: #fff;
+    color: #006241;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+    padding: 5px 10px;
+    border: 1px solid #006241;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.qt button:hover {
+    background-color: #006241;
     color: #fff;
-    font-size: 1.1em;
-    border-radius: 30px;
-    padding: 15px 20px;
 }
 
+.adicionar {
+    background-color: #00754A;
+    color: #fff;
+    font-size: 16px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.adicionar:hover {
+    background-color: #006241;
+}
+
+.adicionar span {
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* ---------- container ---------- */
 .container3 {
     background-color: #1e3932;
     padding: 0px 30px;
@@ -184,6 +254,10 @@ body {
     margin-right: 50px;
 }
 
+
+/* ---------- container ---------- */
+
+
 .container4 {
     background-color: rgb(241, 241, 241);
     display: flex;
@@ -201,9 +275,7 @@ body {
     margin-top: 90px;
 }
 
-.container4 .content .tittle span {
-    
-}
+.container4 .content .tittle span {}
 
 .container4 .content .tittle p {
     font-size: 3.5em;
@@ -237,15 +309,16 @@ body {
 .container4 a {
     margin-top: 40px;
     font-size: 1.1em;
-    border-bottom: 2px solid green; 
+    border-bottom: 2px solid green;
     padding-bottom: 3px;
-    text-decoration: none;  
+    text-decoration: none;
 }
 
 @keyframes moverAumentar {
     0% {
         transform: scale(0.8) translateY(0);
     }
+
     100% {
         transform: scale(1) translateY(-58px);
     }
@@ -305,36 +378,4 @@ body {
     padding: 14px 30px;
     text-decoration: none;
     margin-right: 30px;
-}
-
-@media screen and (min-width:1048px) {
-    .menu {
-        height: 100px;
-    }
-
-    .carrossel {
-        height: 120vh;
-    }
-
-    .container {
-        height: 270px;
-    }
-
-    .container .content p {
-        margin-top: 45px;
-    }
-
-    .container2 .content {
-        margin: 100px 0px;
-    }
-
-    .container2 .content h2 {
-        font-size: 2.7em;
-        margin: 0px 0px 80px;
-    }
-
-    .container4 {
-        height: 144vh;
-    }
-
 }
