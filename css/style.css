@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
-@import url("/css/media.css");
-@import url("/css/media.css");
+@import url("/css/header.css");
 
 * {
     margin: 0;
@@ -24,7 +23,7 @@ img {
 
 .title-top {
     color: #006241;
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     font-family: "Quicksand", sans-serif;
     font-weight: bold !important;
@@ -36,8 +35,7 @@ img {
     color: #1e3932;
     text-align: center;
     font-family: "Cutive", serif;
-    font-size: 40px;
-    font-weight: bold;
+    font-size: 54px;
     padding: 0 20px;
 }
 
@@ -63,7 +61,7 @@ img {
 
 /* ---------- cards ---------- */
 
-.content {
+.products-container {
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -96,7 +94,7 @@ img {
     margin-bottom: 20px;
 }
 
-.card img{
+.card img {
     width: 240px;
     height: 300px;
 }
@@ -191,7 +189,7 @@ img {
 }
 
 .adicionar {
-    background-color: #00754A;
+    background-color: #006241;
     color: #fff;
     font-size: 16px;
     padding: 15px 20px;
@@ -210,55 +208,91 @@ img {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* ---------- container ---------- */
-.container3 {
+
+/* ---------- news ---------- */
+
+.news-container {
     background-color: #1e3932;
-    padding: 0px 30px;
     overflow: hidden;
+    padding: 80px 30px;
+}
+
+.news-content {
     display: flex;
-    height: 85vh;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    margin: 0px 115px;
+    padding-left: 110px;
+    padding-right: 80px;
 }
 
-.container3 .content {
+.news-container img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 40px;
+}
+
+.mobile-hidden {
+    display: none;
+}
+
+.news-row {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.news-row h2 {
+    flex: 1;
+    font-size: 16px;
+    text-align: left;
+    padding: 0;
+}
+
+.news-row p {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 10px;
+    padding: 0;
+}
+
+.news-description {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.elementos {
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 0px 80px;
-    margin: 40px 0px;
-    position: relative;
+    padding: 10px;
 }
 
-.container3 .content .text {
-    padding-right: 100px;
-    display: block;
-    top: 0;
-    margin-bottom: 20px;
-}
-
-.container3 .content .elementos {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 40px;
-}
-
-.container3 .content .elementos a {
-    background-color: green;
-    color: white;
-    font-size: 1.1em;
-    border-radius: 30px;
-    padding: 14px 30px;
+.elementos a {
+    background-color: #006241;
+    color: #fff;
     text-decoration: none;
-    margin-right: 30px;
+    font-size: 16px;
+    padding: 14px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
 }
 
-.container3 .content img {
-    width: 600px;
-    margin-right: 50px;
+.elementos a:hover {
+    background-color: #00754a;
 }
 
+.elementos-icon {
+    color: #fff;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.elementos-icon i {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 10px;
+}
 
 /* ---------- container ---------- */
 
@@ -286,6 +320,8 @@ img {
     font-size: 3.5em;
     margin: 0;
 }
+
+/* ---------- container ---------- */
 
 .galeria {
     width: 1629px;
@@ -359,7 +395,6 @@ img {
     font-size: 1.3em;
 }
 
-
 .container5 .content .informacao h2 {
     font-size: 2.8em;
     margin-top: 50px;
@@ -383,4 +418,103 @@ img {
     padding: 14px 30px;
     text-decoration: none;
     margin-right: 30px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .title-top {
+        font-size: 15px;
+    }
+
+    .title-bottom {
+        font-size: 40px;
+    }
+
+    .content-title {
+        margin-bottom: 10px;
+    }
+
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* -------------- */
+
+    .news-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobile-hidden {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .image-right {
+        display: none;
+    }
+
+    .news-row h2 {
+        text-align: center;
+    }
+
+    .news-row p {
+        text-align: center;
+    }
+
+    .news-description {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .elementos {
+        flex-direction: column;
+    }
+
+    .elementos a {
+        margin-bottom: 20px;
+    }
+
+    .elementos-icon {
+        margin: 0;
+    }
+
+    .news-container img {
+        padding: 0;
+    }
+
+    .content-title {
+        margin-bottom: 20px;
+    }
+
+    .elementos a {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
 }
