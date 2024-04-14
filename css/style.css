@@ -96,6 +96,11 @@ img {
     margin-bottom: 20px;
 }
 
+.card img{
+    width: 240px;
+    height: 300px;
+}
+
 .card a {
     display: block;
     text-align: center;
