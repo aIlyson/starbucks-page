@@ -1,3 +1,39 @@
+const hamburgerIcon = document.getElementById("hamburger-icon");
+const mobileOpenMenu = document.getElementById("open-menu");
+const closeMenu = document.querySelector(".close-menu");
+
+hamburgerIcon.addEventListener("click", () => {
+  mobileOpenMenu.classList.add("active");
+});
+
+closeMenu.addEventListener("click", () => {
+  mobileOpenMenu.classList.remove("active");
+});
+
+// --------------------
+
+const qtyRemover = document.querySelectorAll(".qt-remover");
+const qtyAdicionar = document.querySelectorAll(".qt-adicionar");
+const qtyValor = document.querySelectorAll(".numero");
+
+for (let i = 0; i < qtyRemover.length; i++) {
+  const remover = qtyRemover[i];
+  const adicionar = qtyAdicionar[i];
+  const valor = qtyValor[i];
+
+  remover.addEventListener("click", () => {
+    const numero = parseInt(valor.innerText);
+    valor.innerText = Math.max(numero - 1, 0);
+  });
+
+  adicionar.addEventListener("click", () => {
+    const numero = parseInt(valor.innerText);
+    valor.innerText = Math.max(numero + 1, 0);
+  });
+}
+
+// --------------------
+
 $(document).ready(function () {
   $(".galeria").slick({
     centerMode: true,
@@ -42,25 +78,3 @@ $(document).ready(function () {
     }
   });
 });
-
-// --------------------
-
-const qtyRemover = document.querySelectorAll(".qt-remover");
-const qtyAdicionar = document.querySelectorAll(".qt-adicionar");
-const qtyValor = document.querySelectorAll(".numero");
-
-for (let i = 0; i < qtyRemover.length; i++) {
-  const remover = qtyRemover[i];
-  const adicionar = qtyAdicionar[i];
-  const valor = qtyValor[i];
-
-  remover.addEventListener("click", () => {
-    const numero = parseInt(valor.innerText);
-    valor.innerText = Math.max(numero - 1, 0);
-  });
-
-  adicionar.addEventListener("click", () => {
-    const numero = parseInt(valor.innerText);
-    valor.innerText = Math.max(numero + 1, 0);
-  });
-}
