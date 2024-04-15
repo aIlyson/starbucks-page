@@ -44,7 +44,7 @@ img {
 }
 
 /* ---------- carousel ---------- */
-.carrossel {
+.carousel {
     background-color: rgb(29, 75, 50);
 }
 
@@ -317,133 +317,7 @@ img {
     margin-right: 10px;
 }
 
-/* ---------- container ---------- */
-
-
-.container4 {
-    background-color: rgb(241, 241, 241);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    overflow: hidden;
-}
-
-.container4 .content {
-    text-align: center;
-}
-
-.container4 .content .tittle {
-    margin-top: 90px;
-}
-
-.container4 .content .tittle span {}
-
-.container4 .content .tittle p {
-    font-size: 3.5em;
-    margin: 0;
-}
-
-/* ---------- container ---------- */
-
-.galeria {
-    width: 1629px;
-    margin-top: -460px;
-    overflow: visible;
-}
-
-.galeria img {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-}
-
-.slick-slide img {
-    transition: opacity 0.3s ease;
-    transition: transform 0.3s ease;
-    object-fit: contain;
-}
-
-.slick-center img {
-    opacity: 1;
-    transform: scale(1) translateY(-58px);
-    animation: moverAumentar 0.3s ease;
-}
-
-.container4 a {
-    margin-top: 40px;
-    font-size: 1.1em;
-    border-bottom: 2px solid green;
-    padding-bottom: 3px;
-    text-decoration: none;
-}
-
-@keyframes moverAumentar {
-    0% {
-        transform: scale(0.8) translateY(0);
-    }
-
-    100% {
-        transform: scale(1) translateY(-58px);
-    }
-}
-
-.slick-slide:not(.slick-center) img {
-    transform: scale(0.8);
-    opacity: 0.7;
-}
-
-.container5 {
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-}
-
-.container5 .content {
-    display: flex;
-    margin-inline: 150px;
-}
-
-.container5 .content img {
-    margin-right: 150px;
-}
-
-.container5 .content .informacao {
-    margin-block: 10%;
-    align-items: center;
-}
-
-.container5 .content .informacao span {
-    font-size: 1.3em;
-}
-
-.container5 .content .informacao h2 {
-    font-size: 2.8em;
-    margin-top: 50px;
-}
-
-.container5 .content .informacao p {
-    font-size: 1.3em;
-}
-
-.container5 .content .elementos {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.container5 .content .elementos a {
-    background-color: green;
-    color: white;
-    font-size: 1.1em;
-    border-radius: 30px;
-    padding: 14px 30px;
-    text-decoration: none;
-    margin-right: 30px;
-}
-
-/* scrollbar */
+/* ---------- scrollbar ---------- */
 
 ::-webkit-scrollbar {
     width: 7px;
