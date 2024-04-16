@@ -72,9 +72,8 @@
     color: #fff;
     font-weight: 400;
     font-size: 18px;
-    padding: 14px 26px;
-    margin-right: 20px;
     text-decoration: none;
+    padding: 14px 26px;
     border: 1px solid #fff;
     border-radius: 50px;
     cursor: pointer;
@@ -95,10 +94,6 @@ i {
 .nav-right {
     display: flex;
     align-items: center;
-}
-
-.nav-right a {
-    margin-left: 20px;
 }
 
 .header-hamburger-icon {
