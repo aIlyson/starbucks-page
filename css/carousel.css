@@ -86,3 +86,14 @@
     background-color: #fff;
 }
 
+@media screen and (max-width: 1280px) {
+    .carousel-container {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .carousel-container {
+        height: 50vh;
+    }
+}

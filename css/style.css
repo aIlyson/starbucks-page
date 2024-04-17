@@ -74,6 +74,7 @@ img {
 /* ---------- cards ---------- */
 
 .products-container {
+    background-color: #F2F0EB;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -150,6 +151,7 @@ img {
 }
 
 .icons i {
+    color: #CDCBC8;
     font-size: 15px;
 }
 
@@ -182,7 +184,7 @@ img {
 }
 
 .qt button {
-    background-color: #fff;
+    background-color: #F2F0EB;
     color: #006241;
     font-size: 16px;
     font-weight: bold;
@@ -224,25 +226,26 @@ img {
 /* ---------- news ---------- */
 
 .news-container {
+    width: 100%;
     background-color: #1e3932;
-    overflow: hidden;
     padding: 80px 30px;
+    overflow: hidden;
 }
 
 .news-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0px 115px;
-    padding-left: 110px;
-    padding-right: 80px;
+    margin: 0px auto;
+    max-width: 1200px;
 }
 
-.news-container img {
+.image-right {
+    display: block;
     max-width: 100%;
     height: auto;
-    padding-left: 40px;
 }
 
 .mobile-hidden {
@@ -363,11 +366,59 @@ img {
 
     /* ------------- */
 
-    .produtos {
+    .products-container {
         flex-direction: column;
         align-items: center;
         padding-left: 10px;
         padding-right: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .content-title {
+        margin-bottom: 20px;
+    }
+
+    .produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+        margin-bottom: 30px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .produtos-item {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .carrinho {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .qt button {
+        font-size: 14px;
+        padding: 4px 8px;
+        margin: 10px;
+    }
+
+    .adicionar {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin-top: 5px;
     }
 
     /* -------------- */
@@ -434,4 +485,5 @@ img {
         font-size: 14px;
         padding: 10px 20px;
     }
+
 }
