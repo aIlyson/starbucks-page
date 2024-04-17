@@ -12,6 +12,32 @@ closeMenu.addEventListener("click", () => {
 
 // --------------------
 
+const carouselSlide = document.querySelector(".carousel-slide");
+const prevButton = document.querySelector(".carousel-button.prev");
+const nextButton = document.querySelector(".carousel-button.next");
+const indicators = document.querySelectorAll(".indicator");
+
+let counter = 0;
+
+const handleCarouselNavigation = (indexChange) => {
+  counter = (counter + indexChange + indicators.length) % indicators.length;
+  const translateXValue = -counter * 100;
+  carouselSlide.style.transform = `translateX(${translateXValue}%)`;
+  indicators.forEach((indicator, i) =>
+    indicator.classList.toggle("active", i === counter)
+  );
+};
+
+prevButton.addEventListener("click", () => handleCarouselNavigation(-1));
+nextButton.addEventListener("click", () => handleCarouselNavigation(1));
+indicators.forEach((indicator, index) => {
+  indicator.addEventListener("click", () =>
+    handleCarouselNavigation(index - counter)
+  );
+});
+
+// --------------------
+
 const qtyRemover = document.querySelectorAll(".qt-remover");
 const qtyAdicionar = document.querySelectorAll(".qt-adicionar");
 const qtyValor = document.querySelectorAll(".numero");
