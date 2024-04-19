@@ -159,6 +159,8 @@ a {
     padding: 0;
 }
 
+/* ---------- media query ---------- */
+
 @media screen and (max-width: 1000px) {
     .footer-bottom p {
         margin: 0;

@@ -333,6 +333,8 @@ img {
     border-radius: 8px;
 }
 
+/* ---------- media query ---------- */
+
 @media screen and (max-width: 768px) {
 
     .title-top {
