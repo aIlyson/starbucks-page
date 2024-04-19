@@ -42,19 +42,19 @@ const qtyRemover = document.querySelectorAll(".qt-remover");
 const qtyAdicionar = document.querySelectorAll(".qt-adicionar");
 const qtyValor = document.querySelectorAll(".numero");
 
-for (let i = 0; i < qtyRemover.length; i++) {
+for (let i = 1; i < qtyRemover.length; i++) {
   const remover = qtyRemover[i];
   const adicionar = qtyAdicionar[i];
   const valor = qtyValor[i];
 
   remover.addEventListener("click", () => {
     const numero = parseInt(valor.innerText);
-    valor.innerText = Math.max(numero - 1, 0);
+    valor.innerText = Math.max(numero - 1, 1);
   });
 
   adicionar.addEventListener("click", () => {
     const numero = parseInt(valor.innerText);
-    valor.innerText = Math.max(numero + 1, 0);
+    valor.innerText = Math.max(numero + 1, 1);
   });
 }
 
