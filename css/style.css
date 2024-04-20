@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
-@import url("/css/header.css");
-@import url("/css/carousel.css");
+@import url("header.css");
+@import url("carousel.css");
 
 * {
     margin: 0;
@@ -36,7 +36,7 @@ img {
     color: #1e3932;
     text-align: center;
     font-family: "Cutive", serif;
-    font-size: 54px;
+    font-size: 48px;
     padding: 0 20px;
 }
 
@@ -57,16 +57,20 @@ img {
 }
 
 .taste-subtitle-top {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 22px;
-    font-weight: bold;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 4px;
+    font-size: 15px;
     line-height: 28px;
     margin-bottom: 45px;
 }
 
 .taste-subtitle-bottom {
-    font-family: sans-serif;
-    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 15px;
     margin-bottom: 45px;
 }
 
@@ -74,24 +78,32 @@ img {
 
 .products-container {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 100px;
     padding-bottom: 100px;
+    background-color: #f2f0eb;
 }
 
 .content-title {
     margin-bottom: 40px;
 }
 
-.content-title h2 {
+.content-title span {
     margin: 0;
+    font-family: "Fjalla One", sans-serif;
+    font-style: normal;
+    font-size: 13px;
+    letter-spacing: 4px;
 }
 
 .produtos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding-left: 40px;
-    padding-right: 40px;
+    justify-content: space-between;
+    width: 1200px;
 }
 
 .card {
@@ -126,6 +138,8 @@ img {
 .produtos-item {
     color: #1e3932;
     font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 600;
     margin: 5px 0;
     word-wrap: break-word;
@@ -135,7 +149,13 @@ img {
     text-decoration: underline;
 }
 
+.produtos-item-descricao {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+}
+
 .avaliacao {
+    margin-top: -16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,15 +173,25 @@ img {
 }
 
 .star-view {
-    font-size: 16px;
+    font-size: 18px;
     padding-top: 5px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.star-view:hover {
+    text-decoration: underline;
 }
 
 .price {
-    font-weight: normal;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 10px;
     margin-top: 10px;
     margin-bottom: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .carrinho {
@@ -176,8 +206,12 @@ img {
 }
 
 .qt p {
-    font-size: 20px;
     padding: 0px 10px 0px 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #006241;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
 }
 
 .qt button {
@@ -202,8 +236,7 @@ img {
 .adicionar {
     background-color: #006241;
     color: #fff;
-    font-size: 16px;
-    padding: 15px 20px;
+    padding: 10px 22px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -211,12 +244,15 @@ img {
 }
 
 .adicionar:hover {
-    background-color: #006241;
+    background-color: #007e54;
 }
 
 .adicionar span {
     color: #fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
 }
 
 
@@ -225,7 +261,10 @@ img {
 .news-container {
     background-color: #1e3932;
     overflow: hidden;
-    padding: 80px 30px;
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
 .news-content {
@@ -234,7 +273,7 @@ img {
     justify-content: space-between;
     align-items: center;
     margin: 0px 115px;
-    padding-left: 110px;
+    width: 1100px;
     padding-right: 80px;
 }
 
@@ -250,8 +289,12 @@ img {
 
 .news-row {
     flex: 1;
-    padding-right: 20px;
+    padding-right: 10px;
     text-align: left;
+}
+
+.content-title {
+    margin: 0;
 }
 
 .news-row h2 {
@@ -277,8 +320,11 @@ img {
 }
 
 .news-description {
-    font-size: 20px;
+    font-size: 16px;
     margin-bottom: 25px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
 }
 
 .elementos {
@@ -291,14 +337,23 @@ img {
     background-color: #006241;
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
     padding: 14px 30px;
     border-radius: 50px;
     transition: background-color 0.3s ease;
 }
 
+.elementos span {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+}
+
 .elementos a:hover {
-    background-color: #00754a;
+    background-color: #007e54;
 }
 
 .elementos-icon {
@@ -308,7 +363,7 @@ img {
 }
 
 .elementos-icon i {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     margin-right: 10px;
 }
@@ -328,6 +383,10 @@ img {
 ::-webkit-scrollbar-thumb {
     background: #888;
     border-radius: 8px;
+}
+
+@media screen and (min-width: 769px) {
+    
 }
 
 @media screen and (max-width: 768px) {

@@ -26,8 +26,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 65px;
-    margin-right: 65px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
 }
 
 .menu-list {
@@ -40,7 +41,107 @@
 
 .menu-item {
     margin-right: 10px;
+    padding-block: 25px;
     padding-left: 20px;
+}
+
+.explore-cafe-container {
+    z-index: 9999;
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-inline: 30px;
+}
+
+.receitas-container {
+    z-index: 999999;
+    position: absolute;
+    align-items: flex-start;
+    display: none;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-inline: 30px;
+}
+
+.receitas-container .items {
+    margin: 0;
+}
+
+.saiba-mais-container {
+    z-index: 999999;
+    position: absolute;
+    display: none;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding-inline: 30px;
+}
+
+.saiba-mais-container .items {
+    margin-inline: 20px;
+    padding-inline: 10px;
+    width: 180px;
+}
+
+.nav-latte_macchiato {
+    background-color: #FFFAED;
+    font-family: "Open Sans", sans-serif;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-inline: 70px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 180px;
+    border-radius: 30px;
+    height: 220px;
+    font-size: 14px;
+    color: #1E3932;
+    cursor: pointer;
+}
+
+.nav-latte_macchiato img {
+    width: 75px;
+} 
+
+.nav-latte_macchiato span {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+.items {
+    font-family: "Open Sans", sans-serif;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-inline: 70px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 180px;
+    height: 220px;
+    font-size: 14px;
+    color: #1E3932;
+    cursor: pointer;
+}
+
+.items img {
+    width: 110px;
+}
+
+.items span {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+}
+
+.items:hover {
+    background-color: rgb(241, 232, 232);
+    border-radius: 30px;
 }
 
 .menu-item a {

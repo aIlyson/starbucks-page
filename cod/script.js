@@ -1,3 +1,76 @@
+// hover do menu 
+
+$(document).ready(function(){
+  $("#explore").hover(
+      function() {
+          $(".explore-cafe-container").show(); // Quando o mouse entra no item do menu
+      },
+      function() {
+          $(".explore-cafe-container").hide(); // Quando o mouse sai do item do menu
+      }
+  );
+});
+
+$(document).ready(function(){
+  $(".explore-cafe-container").hover(
+      function() {
+          $(".explore-cafe-container").show(); // Quando o mouse entra no item do menu
+      },
+      function() {
+          $(".explore-cafe-container").hide(); // Quando o mouse sai do item do menu
+      }
+  );
+});
+
+
+$(document).ready(function(){
+  $("#receitas").hover(
+      function() {
+          $(".receitas-container").show(); // Quando o mouse entra no item do menu
+      },
+      function() {
+          $(".receitas-container").hide(); // Quando o mouse sai do item do menu
+      }
+  );
+});
+
+$(document).ready(function(){
+  $(".receitas-container").hover(
+      function() {
+          $(".receitas-container").show(); // Quando o mouse entra no item do menu
+      },
+      function() {
+          $(".receitas-container").hide(); // Quando o mouse sai do item do menu
+      }
+  );
+});
+
+
+$(document).ready(function(){
+  $("#saiba-mais").hover(
+      function() {
+          $(".saiba-mais-container").show(); // Quando o mouse entra no item do menu
+      },
+      function() {
+          $(".saiba-mais-container").hide(); // Quando o mouse sai do item do menu
+      }
+  );
+});
+
+$(document).ready(function(){
+  $(".saiba-mais-container").hover(
+      function() {
+          $(".saiba-mais-container").show(); // Quando o mouse entra no item do menu
+      },
+      function() {
+          $(".saiba-mais-container").hide(); // Quando o mouse sai do item do menu
+      }
+  );
+});
+
+
+// --------------------
+
 const hamburgerIcon = document.getElementById("hamburger-icon");
 const mobileOpenMenu = document.getElementById("open-menu");
 const closeMenu = document.querySelector(".close-menu");
