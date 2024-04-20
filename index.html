@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REPLICA Bem-vindo à STARBUCKS® COFFEE AT HOME!</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/footer.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" type="text/css"
         href="./img/icons/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
@@ -153,6 +154,7 @@
     <!-- caroussel -->
     <div class="carousel-container">
         <div class="carousel-slide">
+
             <div class="carousel-item">
                 <img src="./img/carousel/1.png" alt="imagem">
             </div>
@@ -168,26 +170,46 @@
             <div class="carousel-item">
                 <img src="./img/carousel/4.png" alt="imagem">
                 <p>teste</p>
+                <img src="/img/carousel/4.png" alt="imagem">
             </div>
 
             <div class="carousel-item">
                 <img src="./img/carousel/5.png" alt="imagem">
             </div>
 
-            <div class="carousel-item">
-                <img src="./img/carousel/6.png" alt="imagem">
+            <div class="carousel-item"
+                style="background-image: url('/img/carousel/6.png'); background-size: cover; background-position: center;">
+
+                <div class="item-container">
+                    <div class="item-content">
+                        <h4 class="item-title">DESCUBRA SEU CAFE IDEAL</h4>
+                        <h1 class="item-subtitle">STARBUCKS<sup>®</sup> COFFEE AT HOME</h1>
+                        <p class="item-description">Curta o café Starbucks que você tanto adora no conforto de sua casa.
+                        </p>
+                    </div>
+                    <a class="item-btn" href="#">Saiba mais</a>
+                </div>
+
             </div>
 
             <div class="carousel-item">
                 <img src="./img/carousel/7.png" alt="imagem">
             </div>
 
-            <div class="carousel-item">
-                <img src="./img/carousel/8.png" alt="imagem">
-            </div>
+            <div class="carousel-item"
+                style="background-image: url('/img/carousel/8.png'); background-size: cover; background-position: center;">
 
-            <div class="carousel-item">
-                <img src="./img/carousel/9.png" alt="imagem">
+                <div class="item-container">
+                    <div class="item-content">
+                        <h4 class="item-title" style="color: #fff;">ENCONTRE SUA TORRA FAVORITA</h4>
+                        <h1 class="item-subtitle" style="color: #fff;">Níveis de Torra Starbucks<sup>®</sup></h1>
+                        <p class="item-description" style="color: #fff;">Descubra os diferentes perfis de café e sabores
+                            nos niveis de torra
+                            Starbucks
+                        </p>
+                    </div>
+                    <a class="item-btn" href="#">Saiba mais</a>
+                </div>
             </div>
 
         </div>
@@ -235,11 +257,10 @@
             <span class="indicator"></span>
             <span class="indicator"></span>
             <span class="indicator"></span>
-            <span class="indicator"></span>
         </div>
     </div>
 
-
+    <!-- description -->
     <div class="taste-of-the-season">
         <p class="taste-subtitle-top">
             <span>
@@ -292,7 +313,7 @@
                 <div class="carrinho">
                     <div class="qt">
                         <button class="qt-remover">-</button>
-                        <p class="numero">0</p>
+                        <p class="numero">1</p>
                         <button class="qt-adicionar">+</button>
                     </div>
                     <button class="adicionar" title="adicionar">
@@ -360,7 +381,7 @@
                 <div class="carrinho">
                     <div class="qt">
                         <button class="qt-remover">-</button>
-                        <p class="numero">0</p>
+                        <p class="numero">1</p>
                         <button class="qt-adicionar">+</button>
                     </div>
                     <button class="adicionar">
@@ -374,9 +395,9 @@
     </div>
 
     <!-- news -->
-    <div class="news-container">
-        <div class="news-content">
-            <div class="news-row">
+    <div class="element-container">
+        <div class="element-content">
+            <div class="element-row">
                 <div class="content-title">
                     <h2 class="taste-subtitle-top" style="color: #fff; margin: 0;">Preparação</h2>
                     <p class="subtitle-news" style="color: #fff;">Níveis de torra</p>
@@ -384,10 +405,10 @@
 
                 <img class="mobile-hidden" src="./img/img4.png" alt="#">
 
-                <div class="news-description">
-                    <p>Qual a torra que prefere? Starbucks® Torra Clara, Torra Média ou Torra
+                <div class="element-description">
+                    <p>Qual a torra que prefere? Starbucks<sup>®</sup> Torra Clara, Torra Média ou Torra
                         Escura? Estas são as torras que
-                        fazem parte dos níveis de torra Starbucks® </p>
+                        fazem parte dos níveis de torra Starbucks<sup>®</sup></p>
                 </div>
                 <div class="elementos">
                     <a href="https://www.starbucksathome.com/br/blog/niveis-de-torra.html">Ler o artigo</a>
@@ -401,8 +422,66 @@
         </div>
     </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div style="background-color: #F2F0EB; padding: 250px; text-align: center;"> conteudo</div>
 
+    <!-- footer -->
+
+    <footer class="rodape">
+        <div class="footer-top">
+            <img src="/img/starbucksfooter.png" alt="">
+            <div class="form-container">
+                <div class="email-container">
+                    <label>Cadastre-se para receber benefícios exclusivos.</label>
+                    <input name="email" type="email" placeholder="E-mail*" required>
+                </div>
+                <div class="action">
+                    <button>Assinar</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="bottom-container">
+                <div class="footer-row">
+                    <div class="about">
+                        <p><a href="#">Sobre a Starbucks</a></p>
+                        <p><a href="#">Contatos</a></p>
+                        <div class="global-content">
+                            <i class="fas fa-globe"></i>
+                            <img src="https://www.starbucksathome.com/br/media/wysiwyg/brazil_icon.png" alt="brazil">
+                        </div>
+                    </div>
+                    <div class="links">
+                        <p><a href="https://www.starbucksathome.com/br/cookies">Cookies</a></p>
+                        <p><a href="https://www.starbucksathome.com/br/privacidade">Política de Privacidade</a></p>
+                        <p><a href="https://www.starbucksathome.com/br/terms-of-use">Termos e Condições de Uso</a>
+                        </p>
+                        <p><a href="https://www.starbucksathome.com/br/regulamento-das-promocoes">Regulamento das
+                                Promoções</a></p>
+                        <p><a href="https://www.starbucksathome.com/br/perguntas-frequentes">FAQs</a></p>
+                        <p><a href="https://starbucks.com.br/">Starbucks.com.br</a></p>
+                    </div>
+                </div>
+                <div class="social-footer">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="copyright">
+                    <p class="text-copyright">
+                        A Nestlé usa as marcas registradas da Starbucks sob licença. Pike Place é uma marca
+                        registrada
+                        do Pike Place Market PDA, usado sob licença. Nespresso e NESCAFÉ Dolce Gusto são marcas
+                        registradas da Société des Produits Nestlé S.A.. Todas as outras marcas são de propriedade
+                        de
+                        seus proprietários.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"

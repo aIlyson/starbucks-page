@@ -86,3 +86,96 @@
     background-color: #fff;
 }
 
+/* ---------- item carousel ---------- */
+
+.item-container {
+    width: 50%;
+    background-color: transparent;
+    padding: 15px;
+    margin: 120px 430px 0 200px;
+}
+
+.item-content {
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.item-title {
+    color: #00754a;
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
+}
+
+.item-subtitle {
+    color: #1e3932;
+    font-family: "Libre Baskerville", serif;
+    font-size: 62px;
+    line-height: 74px;
+}
+
+.item-description {
+    color: #333;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.item-btn {
+    background-color: #006241;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.item-btn:hover {
+    background-color: #00754A;
+}
+
+/* ---------- media query ---------- */
+
+@media screen and (max-width: 1280px) {
+    .carousel-container {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .carousel-container {
+        height: 50vh;
+    }
+
+    .item-container {
+        width: 80%;
+        margin: 100px 40px 0 40px;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .item-content {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .item-title {
+        font-size: 16px;
+    }
+
+    .item-subtitle {
+        font-size: 48px;
+    }
+
+    .item-description {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .item-btn a {
+        font-size: 16px;
+        display: inline-block;
+    }
+
+}
