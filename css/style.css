@@ -225,20 +225,20 @@ img {
 
 /* ---------- news ---------- */
 
-.news-container {
+.element-container {
     width: 100%;
     background-color: #1e3932;
     padding: 80px 30px;
     overflow: hidden;
 }
 
-.news-content {
+.element-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0px 115px;
     margin: 0px auto;
+    padding: 0 80px 0 110px;
     max-width: 1200px;
 }
 
@@ -252,20 +252,20 @@ img {
     display: none;
 }
 
-.news-row {
+.element-row {
     flex: 1;
     padding-right: 20px;
     text-align: left;
 }
 
-.news-row h2 {
+.element-row h2 {
     flex: 1;
     font-size: 16px;
     text-align: left;
     padding: 0;
 }
 
-.subtitle-news {
+.subtitle-element {
     color: #fff;
     text-align: left;
     font-family: "Cutive", serif;
@@ -273,25 +273,25 @@ img {
     padding: 0;
 }
 
-.news-row p {
+.element-row p {
     color: #fff;
     text-align: left;
     margin-bottom: 10px;
     padding: 0;
 }
 
-.news-description {
+.element-description {
     font-size: 20px;
     margin-bottom: 25px;
 }
 
-.elementos {
+.element {
     display: flex;
     align-items: center;
     padding: 10px;
 }
 
-.elementos a {
+.element a {
     background-color: #006241;
     color: #fff;
     text-decoration: none;
@@ -301,17 +301,17 @@ img {
     transition: background-color 0.3s ease;
 }
 
-.elementos a:hover {
+.element a:hover {
     background-color: #00754a;
 }
 
-.elementos-icon {
+.element-icon {
     color: #fff;
     font-size: 14px;
     margin-left: 30px;
 }
 
-.elementos-icon i {
+.element-icon i {
     font-size: 20px;
     color: #fff;
     margin-right: 10px;
@@ -425,7 +425,7 @@ img {
 
     /* -------------- */
 
-    .news-content {
+    .element-content {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -445,45 +445,41 @@ img {
         display: none;
     }
 
-    .news-row h2 {
+    .element-row h2 {
         text-align: center;
     }
 
-    .subtitle-news {
+    .subtitle-element {
         font-size: 42px;
         text-align: center;
     }
 
-    .news-row p {
+    .element-row p {
         text-align: center;
     }
 
-    .news-description {
+    .element-description {
         font-size: 16px;
         margin-bottom: 20px;
     }
 
-    .elementos {
+    .element {
         flex-direction: column;
     }
 
-    .elementos a {
+    .element a {
         margin-bottom: 20px;
     }
 
-    .elementos-icon {
+    .element-icon {
         margin: 0;
     }
 
-    .news-container img {
+    .element-container img {
         padding: 0;
     }
 
-    .content-title {
-        margin-bottom: 20px;
-    }
-
-    .elementos a {
+    .element a {
         font-size: 14px;
         padding: 10px 20px;
     }
