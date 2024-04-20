@@ -377,10 +377,6 @@ img {
         padding-bottom: 50px;
     }
 
-    .content-title {
-        margin-bottom: 20px;
-    }
-
     .produtos {
         flex-direction: column;
         align-items: center;
