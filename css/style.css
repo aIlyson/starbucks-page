@@ -23,6 +23,51 @@ img {
     height: auto;
 }
 
+/* ---------- top ---------- */
+
+.sales-container {
+    background-color: #1e3932;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.flash-sales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flash-sales i {
+    color: #fff;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.sales-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.sales-message {
+    color: #fff;
+    font-family: "Fjalla One", sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 29px;
+    letter-spacing: 4px;
+    transition: border-bottom;
+}
+
+.sales-message:hover {
+    border-bottom: 2px solid #00754a;
+}
+
+/* ---------- titles ---------- */
+
 .title-top {
     color: #006241;
     font-size: 16px;
