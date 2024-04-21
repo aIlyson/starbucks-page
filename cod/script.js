@@ -1,23 +1,27 @@
-const toggleExplore = () => $(".explore-cafe-container").toggle();
-const toggleReceitas = () => $(".receitas-container").toggle();
-const toggleSaibaMais = () => $(".saiba-mais-container").toggle();
+const openExplore = () => $(".explore-cafe-container").toggle();
+const openRecipe = () => $(".receitas-container").toggle();
+const openArticle = () => $(".saiba-mais-container").toggle();
 
-$("#explore, .explore-cafe-container").hover(toggleExplore);
-$("#receitas, .receitas-container").hover(toggleReceitas);
-$("#saiba-mais, .saiba-mais-container").hover(toggleSaibaMais);
+$("#explore, .explore-cafe-container").hover(openExplore);
+$("#receitas, .receitas-container").hover(openRecipe);
+$("#saiba-mais, .saiba-mais-container").hover(openArticle);
 
 // --------------------
 
 const cartBtn = document.getElementById("cartBtn");
+const cartBtnMobile = document.getElementById("cartBtnMobile");
 const cartContainer = document.getElementById("cartContainer");
-const fecharBtn = document.querySelector(".fechar");
+const closeCart = document.querySelector(".fechar");
 
-cartBtn.addEventListener("click", function(event) {
+function openCart(event) {
   event.preventDefault();
   cartContainer.style.display = "block";
-});
+}
 
-fecharBtn.addEventListener("click", function() {
+cartBtn.addEventListener("click", openCart);
+cartBtnMobile.addEventListener("click", openCart);
+
+closeCart.addEventListener("click", function () {
   cartContainer.style.display = "none";
 });
 

@@ -475,10 +475,13 @@ img {
 
     }
 
-
     .subtitle-element {
         font-size: 42px;
         text-align: center;
+    }
+
+    .element-container {
+        padding: 20px 10px;
     }
 
     .element-row p {
@@ -503,10 +506,6 @@ img {
 
     .element-icon {
         margin: 0;
-    }
-
-    .element-container img {
-        padding: 0;
     }
 
 }

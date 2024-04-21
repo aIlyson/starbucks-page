@@ -319,6 +319,10 @@ i {
         justify-content: flex-end;
     }
 
+    .logo {
+        margin-left: 50px;
+    }
+
     .menu-list,
     .btn-shop {
         display: none;
