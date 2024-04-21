@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>REPLICA Bem-vindo à STARBUCKS® COFFEE AT HOME!</title>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./css/footer.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
     <link rel="stylesheet" type="text/css"
         href="./img/icons/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="icon" type="image/x-icon"
         href="https://www.starbucksathome.com/br/media/favicon/stores/1/logo-footer_1.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
@@ -44,14 +41,14 @@
             </div>
 
             <div class="nav-right">
-                <a href="#" class="btn-shop">
+                <a href="https://www.starbucksathome.com/br/cafes/c" class="btn-shop">
                     <span>Compre aqui</span>
                 </a>
                 <ul class="menu-list">
-                    <li class="menu-item"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li class="menu-item"><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                    <li class="menu-item"><a href="#">Entrar</a></li>
-                    <li class="menu-item"><a href="#">Registrar</a></li>
+                    <li class="menu-item"><a href="https://www.starbucksathome.com/br/"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="menu-item"><a id="cartBtn"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                    <li class="menu-item"><a href="https://www.starbucksathome.com/br/customer/account/login/">Entrar</a></li>
+                    <li class="menu-item"><a href="https://www.starbucksathome.com/br/customer/account/create/">Registrar</a></li>
                 </ul>
             </div>
 
@@ -77,81 +74,98 @@
                     <li><a href="#">Registrar</a></li>
                 </ul>
 
-                <a href="#">Compre aqui</a>
+                <a href="https://www.starbucksathome.com/br/cafes/c">Compre aqui</a>
 
             </div>
         </div>
 
+        <!-- hover do menu -->
+        <div class="explore-cafe-container ">
+            <a href="https://www.starbucksathome.com/br/cafes/c" style="text-decoration: none;">
+                <div class="items">
+                    <img src="./img/nav/exploreCoffees.avif">
+                    <span style="color:green;">Explore nossos cafés</span>
+                </div>
+            </a>
+            <a href="https://www.starbucksathome.com/br/cafes/tipo/nespresso/c" style="text-decoration: none;">
+                <div class="items">
+                    <img src="./img/nav/sbuxbynespressoassetthumb.avif">
+                    <span>Starbucks<sup>®</sup> by Nespresso<sup>®</sup></span>
+                </div>
+            </a>
+            <a href="https://www.starbucksathome.com/br/cafes/tipo/nescafe-dolce-gusto/c"
+                style="text-decoration: none;">
+                <div class="items">
+                    <img src="./img/nav/bannercategory_NDG_03_2024.avif">
+                    <span>Starbucks<sup>®</sup> by Nescafé<sup>®</sup> Dolce Gusto<sup>®</sup></span>
+                </div>
+            </a>
+            <a href="https://www.starbucksathome.com/br/cafes/tipo/cafe-torrado-moido/c" style="text-decoration: none;">
+                <div class="items">
+                    <img src="./img/nav/20240312_Atualizar_imagens_Torrado_Moido_052.avif">
+                    <span>Café Torrado e Moído</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="receitas-container">
+            <a href="https://www.starbucksathome.com/br/recipe" style="text-decoration: none;">
+                <div class="items">
+                    <img src="./img/nav/browse_recipes.avif">
+                    <span style="color:green;">Explore receitas</span>
+                </div>
+            </a>
+            <a href="https://www.starbucksathome.com/br/recipe" style="text-decoration: none;">
+                <div class="nav-latte_macchiato">
+                    <img src="./img/nav/LATTE_MACCHIATO.png">
+                    <span>Receita do mês</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="saiba-mais-container ">
+            <a href="https://www.starbucksathome.com/br/blog.html" style="text-decoration: none;">
+                <div class="items">
+                    <span style="color:green;">Explore os artigos</span>
+                </div>
+            </a>
+            <a href="https://www.starbucksathome.com/br/blog/De-onde-vem-o-cafe.html" style="text-decoration: none;">
+                <div class="items">
+                    <span><b>Jornada do café</b></span>
+                    <p>É uma arte relaxar e realmente saborear o seu café,...</p>
+                </div>
+            </a>
+            <a href="https://www.starbucksathome.com/br/blog/como-provar-cafe.html" style="text-decoration: none;">
+                <div class="items">
+                    <span><b>Preparação de café</b></span>
+                    <p>De onde vem o café - a sua origem - faz a diferença...</p>
+                </div>
+            </a>
+            <a href="https://www.starbucksathome.com/br/blog/cafe-practices.html" style="text-decoration: none;">
+                <div class="items">
+                    <span><b>Sustentabilidade</b></span>
+                    <p>O pilar da Starbucks<sup>®</sup> é a abordagem de...</p>
+                </div>
+            </a>
+        </div>
+
+        <!-- Container do carrinho -->
+
+        <div id="cartContainer" class="cart-container">
+            <div class="meu-carrinho-sup">
+                <p>Meu Carrinho</p>
+                <span class="fechar" onclick="fecharContainer()">&times;</span>
+            </div>
+            <div class="cart-content">
+                <img src="./img/nav/empty-minicart.avif" alt="empty-minicart">
+                <span>O seu carrinho ainda está vazio, que tal adicionar alguns itens?</span>
+                <div class="element">
+                    <a href="https://www.starbucksathome.com/br/cafes/c">Explore nossos Cafés</a>
+                </div>
+            </div>
+        </div>
+
     </header>
-
-    <!-- hover do menu -->
-    <div class="explore-cafe-container ">
-        <a href="https://www.starbucksathome.com/br/cafes/c" style="text-decoration: none;">
-            <div class="items">
-                <img src="./img/nav/exploreCoffees.avif">
-                <span style="color:green;">Explore nossos cafés</span>
-            </div>
-        </a>
-        <a href="https://www.starbucksathome.com/br/cafes/tipo/nespresso/c" style="text-decoration: none;">
-            <div class="items">
-                <img src="./img/nav/sbuxbynespressoassetthumb.avif">
-                <span>Starbucks<sup>®</sup> by Nespresso<sup>®</sup></span>
-            </div>
-        </a>
-        <a href="https://www.starbucksathome.com/br/cafes/tipo/nescafe-dolce-gusto/c" style="text-decoration: none;">
-            <div class="items">
-                <img src="./img/nav/bannercategory_NDG_03_2024.avif">
-                <span>Starbucks<sup>®</sup> by Nescafé<sup>®</sup> Dolce Gusto<sup>®</sup></span>
-            </div>
-        </a>
-        <a href="https://www.starbucksathome.com/br/cafes/tipo/cafe-torrado-moido/c" style="text-decoration: none;">
-            <div class="items">
-                <img src="./img/nav/20240312_Atualizar_imagens_Torrado_Moido_052.avif">
-                <span>Café Torrado e Moído</span>
-            </div>
-        </a>
-    </div>
-
-    <div class="receitas-container">
-        <a href="https://www.starbucksathome.com/br/recipe" style="text-decoration: none;">
-            <div class="items">
-                <img src="./img/nav/browse_recipes.avif">
-                <span style="color:green;">Explore receitas</span>
-            </div>
-        </a>
-        <a href="https://www.starbucksathome.com/br/recipe" style="text-decoration: none;">
-            <div class="nav-latte_macchiato">
-                <img src="./img/nav/LATTE_MACCHIATO.png">
-                <span>Receita do mês</span>
-            </div>
-        </a>
-    </div>
-
-    <div class="saiba-mais-container ">
-        <a href="https://www.starbucksathome.com/br/blog.html" style="text-decoration: none;">
-            <div class="items">
-                <span style="color:green;">Explore os artigos</span>
-            </div>
-        </a>
-        <a href="https://www.starbucksathome.com/br/blog/De-onde-vem-o-cafe.html" style="text-decoration: none;">
-            <div class="items">
-                <span><b>Jornada do café</b></span>
-                <p>É uma arte relaxar e realmente saborear o seu café,...</p>
-            </div>
-        </a>
-        <a href="https://www.starbucksathome.com/br/blog/como-provar-cafe.html" style="text-decoration: none;">
-            <div class="items">
-                <span><b>Preparação de café</b></span>
-                <p>De onde vem o café - a sua origem - faz a diferença...</p>
-            </div>
-        </a>
-        <a href="https://www.starbucksathome.com/br/blog/cafe-practices.html" style="text-decoration: none;">
-            <div class="items">
-                <span><b>Sustentabilidade</b></span>
-                <p>O pilar da Starbucks<sup>®</sup> é a abordagem de...</p>
-            </div>
-        </a>
-    </div>
 
 
     <!-- caroussel -->
@@ -331,7 +345,7 @@
                 </a>
                 <a class="produtos-item"
                     href="https://www.starbucksathome.com/br/kit-boas-vindas-nespresso-25off/p">Starbucks® Sunny Day
-                    Blend by Nespresso® - 10 cápsulas</a>
+                    Blend by Nespresso® - 10 cápsulas</a><br>
                 <span>by Nespresso® | Torra Clara</span>
                 <div class="avaliacao">
                     <div class="icons">
@@ -403,8 +417,8 @@
         <div class="element-content">
             <div class="element-row">
                 <div class="content-title">
-                    <h2 class="taste-subtitle-top" style="color: #fff; margin: 0;">Preparação</h2>
-                    <p class="subtitle-news" style="color: #fff;">Níveis de torra</p>
+                    <h2 class="taste-subtitle-top" style="color: #fff; margin: 0;">PREPARAÇÃO</h2>
+                    <p class="subtitle-element" style="color: #fff;">Níveis de torra</p>
                 </div>
 
                 <img class="mobile-hidden" src="./img/img4.png" alt="#">
@@ -426,7 +440,33 @@
         </div>
     </div>
 
-    <div style="background-color: #F2F0EB; padding: 250px; text-align: center;"> conteudo</div>
+
+    <!-- Histórias -->
+    <div class="story-container">
+        <div class="story-content">
+
+            <img src="./img/img5.png" alt="#">
+
+            <div class="story-text">
+                <div class="story-tittle">
+                    <span>SOBRE NÓS</span>
+                    <h2>A história da Starbucks</h2>
+                </div>
+                <P>Todos os dias, os parceiros (funcionários) da Starbucks vão trabalhar na esperança de fazer duas
+                    coisas: compartilhar um ótimo café com seus amigos e ajudar a tornar o mundo um pouco melhor.</P>
+                <div class="story-elements">
+                    <div class="element">
+                        <a href="https://www.starbucksathome.com/br/sobre-starbucks">Leia a história</a>
+                    </div>
+                    <div class="story-elements-icon">
+                        <i class="fa-solid fa-book-open" style="margin-right: 10px; color: rgb(36, 112, 65);"></i>
+                        <span style="color: rgb(36, 112, 65);"> 3 min de leitura</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- footer -->
 

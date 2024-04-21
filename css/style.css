@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Bebas+Neue&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Fjalla+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 @import url("/css/header.css");
 @import url("/css/carousel.css");
-@import url("/css/footer.cssFf");
+@import url("/css/footer.css");
 
 * {
     margin: 0;
@@ -27,8 +27,9 @@ img {
     color: #006241;
     font-size: 16px;
     text-align: center;
-    font-family: "Quicksand", sans-serif;
-    font-weight: bold !important;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     letter-spacing: .25em;
     padding: 0 20px;
 }
@@ -36,8 +37,11 @@ img {
 .title-bottom {
     color: #1e3932;
     text-align: center;
-    font-family: "Cutive", serif;
-    font-size: 48px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 44px;
     padding: 0 20px;
 }
 
@@ -71,7 +75,7 @@ img {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-size: 15px;
+    font-size: 16px;
     margin-bottom: 45px;
 }
 
@@ -95,9 +99,8 @@ img {
 .produtos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding-left: 40px;
-    padding-right: 40px;
+    justify-content: center;
+    padding-inline: 10px;
 }
 
 .card {
@@ -109,6 +112,7 @@ img {
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
+    margin-inline: 40px;
 }
 
 .card img {
@@ -120,13 +124,19 @@ img {
     display: block;
     text-align: center;
     text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 18px;
 }
 
 .card span {
     color: #1E3932;
-    font-size: 16px;
+    font-size: 17px;
     text-align: center;
     margin: 0px 0px 10px;
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .produtos-item {
@@ -224,7 +234,9 @@ img {
 
 .adicionar span {
     color: #fff;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
@@ -245,9 +257,8 @@ img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0px 115px;
+    margin: 20px 115px;
     width: 1100px;
-    padding-right: 80px;
 }
 
 .image-right {
@@ -262,7 +273,7 @@ img {
 
 .element-row {
     flex: 1;
-    padding-right: 10px;
+    margin-right: 50px;
     text-align: left;
 }
 
@@ -280,8 +291,11 @@ img {
 .subtitle-element {
     color: #fff;
     text-align: left;
-    font-family: "Cutive", serif;
-    font-size: 62px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 45px;
     padding: 0;
 }
 
@@ -292,18 +306,18 @@ img {
     padding: 0;
 }
 
-.news-description {
-    font-size: 20px;
+.element-description {
+    font-size: 18px;
     margin-bottom: 25px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .element {
     display: flex;
     align-items: center;
-    padding: 10px;
+    margin-top: 30px;
 }
 
 .element a {
@@ -339,6 +353,81 @@ img {
     font-size: 20px;
     color: #fff;
     margin-right: 10px;
+}
+
+
+/* ---------- story ---------- */
+
+.story-container {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.story-content {
+    margin: 70px 140px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 1100px;
+}
+
+.story-content img {
+    margin-right: 150px;
+}
+
+.story-text {
+    margin-block: 10%;
+    align-items: center;
+}
+
+.story-tittle span {
+    font-size: 15px;
+    color: #006241;
+    font-family: "Fjalla One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 4px;
+}
+
+.story-tittle h2 {
+    font-size: 45px;
+    margin-top: 35px;
+    margin-bottom: 30px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    color: #1e3932;
+}
+
+.story-text p {
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+}
+
+.story-elements {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.story-elements .element {
+    margin: 0;
+}
+
+.story-elements-icon {
+    align-items: center;
+    display: flex;
+    margin-right: 50px;
+}
+
+.story-elements-icon span {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
 }
 
 /* ---------- scrollbar ---------- */
@@ -400,8 +489,8 @@ img {
     }
 
     .produtos {
-        flex-direction: column;
         align-items: center;
+        display: flex;
     }
 
     .card {
@@ -437,7 +526,7 @@ img {
 
     .adicionar {
         font-size: 14px;
-        padding: 10px 20px;
+        padding: 15px 25px;
         margin-top: 5px;
     }
 
@@ -450,6 +539,10 @@ img {
         text-align: center;
         margin: 0;
         padding: 0;
+    }
+
+    .content-title {
+        margin-top: 70px;
     }
 
     .mobile-hidden {
@@ -483,10 +576,13 @@ img {
 
     .element {
         flex-direction: column;
+        margin-bottom: 70px;
     }
 
     .element a {
         margin-bottom: 20px;
+        padding: 15px 30px;
+        font-size: 17px;
     }
 
     .element-icon {
@@ -497,9 +593,55 @@ img {
         padding: 0;
     }
 
-    .element a {
-        font-size: 14px;
-        padding: 10px 20px;
+    /* -------------- */
+
+    .story-content {
+        flex-direction: column;
+        position: relative;
+        display: block;
+        padding: 0;
+        margin: 30px 20px;
+        overflow: hidden;
+    }
+
+    /*consertar*/
+
+    .story-tittle {
+        text-align: center;
+        position: absolute;
+        order: 1;
+        top: 0;
+    }
+
+    .story-content img {
+        display: block;
+        max-width: 95%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .story-tittle h2 {
+        font-size: 40px;
+        margin: 0;
+    }
+
+    .story-text p {
+        text-align: center;
+    }
+
+    .story-elements {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .story-elements .element a {
+        margin-bottom: 8px;
+        padding: 15px 35px;
+        font-size: 17px;
+    }
+
+    .story-elements-icon {
+        margin: 0px 0px;
     }
 
 }

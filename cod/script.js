@@ -71,6 +71,19 @@ $(document).ready(function(){
 
 // --------------------
 
+// parte do cart
+
+document.getElementById("cartBtn").addEventListener("click", function(event) {
+  event.preventDefault(); // Evita o comportamento padrão do link
+  document.getElementById("cartContainer").style.display = "block";
+});
+
+function fecharContainer() {
+  document.getElementById("cartContainer").style.display = "none";
+}
+
+//---------------------
+
 const hamburgerIcon = document.getElementById("hamburger-icon");
 const mobileOpenMenu = document.getElementById("open-menu");
 const closeMenu = document.querySelector(".close-menu");
