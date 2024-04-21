@@ -266,11 +266,28 @@ i {
     position: absolute;
     top: 0;
     right: 0;
-    width: 80%;
+    width: 100%;
     height: 100%;
-    background-color: #1E3932;
-    padding: 20px;
+    background-color: #f2f0eb;
+    padding: 10px 30px;
     overflow-y: auto;
+}
+
+.menu-top {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menu-tittle a {
+    color: #1e3932;
+    text-align: start;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 40px;
+    font-size: 40px;
 }
 
 .mobile-menu ul {
@@ -279,25 +296,35 @@ i {
 }
 
 .mobile-menu li {
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    width: 280px;
 }
 
 .mobile-menu a {
-    color: #fff;
     text-decoration: none;
+}
+
+.menu-login a, .menu-registro a {
+    color: #686868;
     font-size: 18px;
 }
 
-.close-menu {
+.close-menu i {
     background: transparent;
-    color: #fff;
+    color: #686868;
     position: absolute;
-    top: 20px;
+    top: 35px;
     right: 20px;
     font-size: 24px;
     border: none;
     cursor: pointer;
 }
+
+/*  info-containers  */
+
+
+
+
 
 /* ---------- media query ---------- */
 
@@ -339,4 +366,5 @@ i {
     #open-menu.active {
         display: block;
     }
+
 }

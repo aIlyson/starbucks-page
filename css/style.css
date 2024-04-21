@@ -109,9 +109,10 @@ img {
 .taste-subtitle-top {
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
+    font-size: 15px;
     font-style: normal;
     letter-spacing: 4px;
-    line-height: 28px;
+    margin-bottom: 40px;
 }
 
 .taste-subtitle-bottom {
@@ -302,6 +303,7 @@ img {
     align-items: center;
     margin: 0px 115px;
     width: 1100px;
+    height: 400px;
 }
 
 .image-right {
@@ -332,7 +334,7 @@ img {
     font-family: "Playfair Display", serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 65px;
+    font-size: 48px;
     line-height: 74px;
     padding: 0;
 }
@@ -426,12 +428,12 @@ img {
     }
 
     .taste-subtitle-top {
-        font-size: 16px;
+        font-size: 18px;
         margin-bottom: 30px;
     }
 
     .taste-subtitle-bottom {
-        font-size: 16px;
+        font-size: 14px;
         margin-bottom: 10px;
     }
 
@@ -494,6 +496,7 @@ img {
         flex-direction: column;
         text-align: center;
         margin: 0;
+        height: auto;
     }
 
     .content-title {
@@ -523,6 +526,7 @@ img {
     .subtitle-element {
         font-size: 42px;
         text-align: center;
+        line-height: 50px;
     }
 
     .element-container {

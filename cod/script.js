@@ -41,6 +41,11 @@ closeMenu.addEventListener("click", () => {
 
 // --------------------
 
+
+
+
+// --------------------
+
 const carouselSlide = document.querySelector(".carousel-slide");
 const prevButton = document.querySelector(".carousel-button.prev");
 const nextButton = document.querySelector(".carousel-button.next");
