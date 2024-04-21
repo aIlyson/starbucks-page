@@ -128,7 +128,7 @@ const qtyRemover = document.querySelectorAll(".qt-remover");
 const qtyAdicionar = document.querySelectorAll(".qt-adicionar");
 const qtyValor = document.querySelectorAll(".numero");
 
-for (let i = 1; i < qtyRemover.length; i++) {
+for (let i = 0; i < qtyRemover.length; i++) {
   const remover = qtyRemover[i];
   const adicionar = qtyAdicionar[i];
   const valor = qtyValor[i];
