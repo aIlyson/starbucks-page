@@ -362,6 +362,7 @@ img {
     justify-content: center;
     align-items: center;
     display: flex;
+    overflow: hidden;
 }
 
 .story-content {
@@ -533,12 +534,9 @@ img {
     /* -------------- */
 
     .element-content {
-        display: flex;
         flex-direction: column;
-        align-items: center;
         text-align: center;
         margin: 0;
-        padding: 0;
     }
 
     .content-title {
@@ -554,6 +552,10 @@ img {
 
     .image-right {
         display: none;
+    }
+
+    .element-row {
+        margin: 0;
     }
 
     .element-row h2 {
@@ -606,10 +608,17 @@ img {
 
     /*consertar*/
 
+    .story-text {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
     .story-tittle {
         text-align: center;
         position: absolute;
-        order: 1;
         top: 0;
     }
 
@@ -641,7 +650,10 @@ img {
     }
 
     .story-elements-icon {
-        margin: 0px 0px;
+        margin: 10px 0px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 
 }
