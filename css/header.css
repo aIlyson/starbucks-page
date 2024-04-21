@@ -75,11 +75,11 @@
 }
 
 .saiba-mais-container {
+    background-color: #fff;
     display: none;
     position: absolute;
     left: 0;
     width: 100%;
-    background-color: rgb(255, 255, 255);
     padding-inline: 30px;
     z-index: 999999;
 }
