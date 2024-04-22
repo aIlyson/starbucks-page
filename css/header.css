@@ -51,8 +51,8 @@
 
 .explore-cafe-container {
     background-color: #fff;
-    display: none;
     position: absolute;
+    display: none;
     left: 0;
     width: 100%;
     padding-inline: 30px;
@@ -61,10 +61,10 @@
 
 .receitas-container {
     background-color: #fff;
-    position: absolute;
     left: 0;
-    align-items: flex-start;
+    position: absolute;
     display: none;
+    align-items: flex-start;
     width: 100%;
     padding-inline: 30px;
     z-index: 999999;
@@ -76,8 +76,8 @@
 
 .saiba-mais-container {
     background-color: #fff;
-    display: none;
     position: absolute;
+    display: none;
     left: 0;
     width: 100%;
     padding-inline: 30px;
@@ -99,8 +99,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: "Open Sans", sans-serif;
     font-size: 14px;
+    font-family: "Open Sans", sans-serif;
     text-align: center;
     margin-inline: 70px;
     margin-top: 20px;
@@ -120,13 +120,13 @@
 }
 
 .cart-container {
-    display: none;
+    background-color: #fff;
     position: fixed;
+    display: none;
     height: 100%;
     width: 480px;
     right: 0;
     top: 0;
-    background-color: #fff;
     padding-inline: 50px;
     z-index: 9999999;
 }
@@ -159,19 +159,19 @@
 }
 
 .items {
-    font-family: "Open Sans", sans-serif;
+    color: #1E3932;
+    width: 180px;
+    height: 220px;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
     justify-content: center;
     margin-inline: 70px;
     margin-top: 20px;
     margin-bottom: 40px;
-    width: 180px;
-    height: 220px;
-    font-size: 14px;
-    color: #1E3932;
     cursor: pointer;
 }
 
@@ -180,9 +180,9 @@
 }
 
 .items span {
+    width: 60%;
     margin-top: 10px;
     margin-bottom: 20px;
-    width: 60%;
 }
 
 .items:hover {
@@ -252,23 +252,23 @@ i {
 /* mobile */
 
 #open-menu {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
     z-index: 999;
 }
 
 .mobile-menu {
+    background-color: #f2f0eb;
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     right: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #f2f0eb;
     padding: 10px 30px;
     overflow-y: auto;
 }
@@ -282,12 +282,12 @@ i {
 .menu-tittle a {
     color: #1e3932;
     text-align: start;
+    font-size: 40px;
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
     line-height: 40px;
-    font-size: 40px;
 }
 
 .mobile-menu ul {
@@ -304,7 +304,8 @@ i {
     text-decoration: none;
 }
 
-.menu-login a, .menu-registro a {
+.menu-login a,
+.menu-registro a {
     color: #8f8f8f;
     font-size: 17px;
     font-family: "Kanit", sans-serif;
@@ -330,15 +331,15 @@ i {
 }
 
 .info-container.active {
-    display: block;
     background-color: #f2f0eb;
-    position: fixed;
-    z-index: 99999;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
     overflow-y: auto;
+    z-index: 99999;
 }
 
 .info-container h2 {
@@ -353,14 +354,14 @@ i {
 }
 
 .info-content .items {
-    margin-top: 30px;
-    padding-bottom: 40px;
-    height: 100px;
-    margin-inline: 0;
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 100px;
     text-align: start;
+    margin-top: 30px;
+    margin-inline: 0;
+    padding-bottom: 40px;
     border-bottom: 1px solid rgb(201, 201, 201);
 }
 
@@ -369,18 +370,18 @@ i {
 }
 
 .items-SaibaMais {
-    margin-top: 30px;
-    padding-bottom: 60px;
-    margin-inline: 40px;
+    color: #1E3932;
     width: 60%;
     text-align: start;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
-    color: #1E3932;
+    margin-top: 30px;
+    margin-inline: 40px;
+    padding-bottom: 60px;
 }
 
-.close-menu-container i, 
-.close-menu-container-R i, 
+.close-menu-container i,
+.close-menu-container-R i,
 .close-menu-container-SB i,
 .close-info i {
     background: transparent;
@@ -391,8 +392,8 @@ i {
     cursor: pointer;
 }
 
-.close-menu-container i, 
-.close-menu-container-R i, 
+.close-menu-container i,
+.close-menu-container-R i,
 .close-menu-container-SB i {
     top: 35px;
     right: 20px;

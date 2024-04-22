@@ -14,9 +14,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
+    font-size: 22px;
     font-weight: 400;
     line-height: 1.42857143;
-    font-size: 1.4rem;
 }
 
 img {
@@ -71,8 +71,8 @@ img {
 
 .title-top {
     color: #006241;
-    font-size: 16px;
     text-align: center;
+    font-size: 16px;
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -91,10 +91,6 @@ img {
     padding: 0 20px;
 }
 
-.menu {
-    background-color: rgb(9, 51, 22);
-}
-
 /* ---------- description ---------- */
 
 .taste-of-the-season {
@@ -108,19 +104,19 @@ img {
 }
 
 .taste-subtitle-top {
+    font-size: 15px;
     font-family: "Fjalla One", sans-serif;
     font-weight: 400;
-    font-size: 15px;
     font-style: normal;
     letter-spacing: 4px;
     margin-bottom: 40px;
 }
 
 .taste-subtitle-bottom {
+    font-size: 16px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 600;
-    font-size: 16px;
     margin-bottom: 45px;
 }
 
@@ -284,7 +280,6 @@ img {
     font-style: normal;
 }
 
-
 /* ---------- news ---------- */
 
 .element-container {
@@ -357,10 +352,10 @@ img {
 
 .element-description {
     font-size: 18px;
-    margin-bottom: 25px;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
+    margin-bottom: 25px;
 }
 
 .element {
@@ -372,23 +367,23 @@ img {
 .element a {
     background-color: #006241;
     color: #fff;
+    font-size: 17px;
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 17px;
     text-decoration: none;
     padding: 14px 30px;
     border-radius: 50px;
     transition: background-color 0.3s ease;
 }
 
+.element a:hover {
+    background-color: #00754a;
+}
+
 .element span {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
-}
-
-.element a:hover {
-    background-color: #00754a;
 }
 
 .element-icon {
@@ -398,8 +393,8 @@ img {
 }
 
 .element-icon i {
-    font-size: 20px;
     color: #fff;
+    font-size: 20px;
     margin-right: 10px;
 }
 
@@ -419,6 +414,8 @@ img {
     background: #888;
     border-radius: 8px;
 }
+
+/* ---------- media query ---------- */
 
 @media screen and (max-width: 768px) {
 
@@ -451,10 +448,7 @@ img {
     .products-container {
         flex-direction: column;
         align-items: center;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding: 50px 10px;
     }
 
     .produtos {
@@ -545,8 +539,8 @@ img {
     }
 
     .subtitle-element {
-        font-size: 42px;
         text-align: center;
+        font-size: 42px;
         line-height: 50px;
     }
 
