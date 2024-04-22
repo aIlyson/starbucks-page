@@ -41,11 +41,6 @@ closeMenu.addEventListener("click", () => {
 
 // --------------------
 
-
-
-
-// --------------------
-
 const carouselSlide = document.querySelector(".carousel-slide");
 const prevButton = document.querySelector(".carousel-button.prev");
 const nextButton = document.querySelector(".carousel-button.next");
@@ -95,7 +90,7 @@ for (let i = 0; i < qtyRemover.length; i++) {
 // --------------------
 
 $(document).ready(function () {
-  $(".galeria").slick({
+  $(".coffe-container").slick({
     centerMode: true,
     centerPadding: "0%", // Espaço entre as imagens
     slidesToShow: 3, // Mostra três imagens
@@ -123,9 +118,8 @@ $(document).ready(function () {
     nextArrow: false, // Remove o botão de navegação "Próximo"
   });
 
-  // Adiciona evento de clique para cada imagem
-  $(".galeria img").on("click", function (e) {
-    const $carousel = $(".galeria");
+  $(".coffe-container img").on("click", function (e) {
+    const $carousel = $(".coffe-container");
     const clickX = e.pageX;
     const widthBody = document.body.offsetWidth;
 

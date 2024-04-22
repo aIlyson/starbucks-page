@@ -1,0 +1,112 @@
+.coffer-container {
+    background-color: #F2F0EB;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 55px;
+    overflow: hidden;
+}
+
+.coffer-container a {
+    color: #00754a;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #00754a;
+}
+
+.coffe-container {
+    width: 1629px;
+    margin-top: -450px;
+    overflow: visible;
+}
+
+.coffer-item img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.coffer-item span {
+    color: #1e3932;
+    font-size: 16px;
+    font-family: "Kanit", sans-serif;
+    line-height: 18px;
+}
+
+.slick-slide img {
+    transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
+    object-fit: contain;
+}
+
+.slick-center img {
+    opacity: 1;
+    transform: scale(1) translateY(-58px);
+    animation: scaleUp 0.3s ease;
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.8) translateY(0);
+    }
+
+    100% {
+        transform: scale(1) translateY(-58px);
+    }
+}
+
+.slick-slide:not(.slick-center) img {
+    transform: scale(0.8);
+    opacity: 0.7;
+}
+
+.background-coffer {
+    position: relative;
+    height: auto;
+}
+
+.background-coffer img {
+    width: 580px;
+}
+
+
+@media screen and (max-width: 1000px) {
+
+    .coffe-container {
+        width: 1219px;
+    }
+
+    .coffer-item img {
+        width: 450px;
+        margin-top: 70px;
+    }
+
+    .background-coffer img {
+        width: 550px;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+
+    .coffer-container {
+        padding: 20px 10px;
+    }
+
+    .coffer-item img {
+        width: 250px;
+        margin-top: 250px;
+    }
+
+    .background-coffer img {
+        width: 350px;
+    }
+
+}
