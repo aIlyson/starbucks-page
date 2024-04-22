@@ -112,7 +112,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-
 // --------------------
 
 const carouselSlide = document.querySelector(".carousel-slide");
