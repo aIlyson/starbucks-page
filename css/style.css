@@ -302,13 +302,21 @@ img {
     justify-content: center;
     align-items: center;
     margin: 0px 115px;
-    width: 1100px;
-    height: 400px;
+    width: 1200px;
+}
+
+#news-container {
+    padding: 80px 30px;
+}
+
+#news-content {
+    height: 380px;
+    margin: 0px 80px;
 }
 
 .image-right {
     display: block;
-    max-width: 100%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -496,7 +504,19 @@ img {
         flex-direction: column;
         text-align: center;
         margin: 0;
+    }
+
+    #news-content {
         height: auto;
+        margin-inline: 25px;
+    }
+
+    #news-container {
+        padding: 0;
+    }
+
+    #story-content {
+        margin-inline: 20px;
     }
 
     .content-title {
