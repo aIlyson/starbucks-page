@@ -305,8 +305,11 @@ i {
 }
 
 .menu-login a, .menu-registro a {
-    color: #686868;
-    font-size: 18px;
+    color: #8f8f8f;
+    font-size: 17px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .close-menu i {
@@ -322,9 +325,83 @@ i {
 
 /*  info-containers  */
 
+.info-container {
+    display: none;
+}
 
+.info-container.active {
+    display: block;
+    background-color: #f2f0eb;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
 
+.info-container h2 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
 
+.info-content {
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.info-content .items {
+    margin-top: 30px;
+    padding-bottom: 40px;
+    height: 100px;
+    margin-inline: 0;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: start;
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+.info-content .items img {
+    margin-right: 20px;
+}
+
+.items-SaibaMais {
+    margin-top: 30px;
+    padding-bottom: 60px;
+    margin-inline: 40px;
+    width: 60%;
+    text-align: start;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    color: #1E3932;
+}
+
+.close-menu-container i, 
+.close-menu-container-R i, 
+.close-menu-container-SB i,
+.close-info i {
+    background: transparent;
+    color: #686868;
+    position: absolute;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.close-menu-container i, 
+.close-menu-container-R i, 
+.close-menu-container-SB i {
+    top: 35px;
+    right: 20px;
+}
+
+.close-info i {
+    top: 35px;
+    left: 20px;
+}
 
 /* ---------- media query ---------- */
 

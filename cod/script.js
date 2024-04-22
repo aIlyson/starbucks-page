@@ -9,7 +9,6 @@ $("#saiba-mais, .saiba-mais-container").hover(openArticle);
 // --------------------
 
 const cartBtn = document.getElementById("cartBtn");
-const cartBtnMobile = document.getElementById("cartBtnMobile");
 const cartContainer = document.getElementById("cartContainer");
 const closeCart = document.querySelector(".fechar");
 
@@ -19,7 +18,6 @@ function openCart(event) {
 }
 
 cartBtn.addEventListener("click", openCart);
-cartBtnMobile.addEventListener("click", openCart);
 
 closeCart.addEventListener("click", function () {
   cartContainer.style.display = "none";
@@ -38,6 +36,82 @@ hamburgerIcon.addEventListener("click", () => {
 closeMenu.addEventListener("click", () => {
   mobileOpenMenu.classList.remove("active");
 });
+
+// --------------------
+
+document.addEventListener('DOMContentLoaded', function () {
+  const produtosLink = document.getElementById('nossos-produtos-mobile');
+  const receitasLink = document.getElementById('receitas-mobile');
+  const saibaMaisLink = document.getElementById('saiba-mais-mobile');
+  const produtosContainer = document.getElementById('nossos-produtos-info');
+  const receitasContainer = document.getElementById('receitas-info');
+  const saibaMaisContainer = document.getElementById('saiba-mais-info');
+  const produtosCloseButton = document.querySelector('#nossos-produtos-info .close-info');
+  const receitasCloseButton = document.querySelector('#receitas-info .close-info');
+  const saibaMaisCloseButton = document.querySelector('#saiba-mais-info .close-info');
+  const closeMenuButton = document.querySelector('.close-menu-container');
+  const closeMenuButtonReceitas = document.querySelector('.close-menu-container-R');
+  const closeMenuButtonSaibaMais = document.querySelector('.close-menu-container-SB');
+
+  // Adiciona evento de clique ao links
+
+  produtosLink.addEventListener('click', function (event) {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    // Abre o container de informações correspondente
+    produtosContainer.classList.add('active');
+  });
+
+  receitasLink.addEventListener('click', function (event) {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    // Abre o container de informações correspondente
+    receitasContainer.classList.add('active');
+  });
+
+  saibaMaisLink.addEventListener('click', function (event) {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    // Abre o container de informações correspondente
+    saibaMaisContainer.classList.add('active');
+});
+
+  // Adiciona evento de clique ao botão de fechar o container
+
+  produtosCloseButton.addEventListener('click', function () {
+    // Fecha o container de informações de produtos
+    produtosContainer.classList.remove('active');
+  });
+
+  receitasCloseButton.addEventListener('click', function () {
+    // Fecha o container de informações de receitas
+    receitasContainer.classList.remove('active');
+  });
+
+  saibaMaisCloseButton.addEventListener('click', function () {
+    // Fecha o container de informações de Saiba mais
+    saibaMaisContainer.classList.remove('active');
+});
+
+  // Adiciona evento de clique ao botão de fechar o menu inteiro
+
+  closeMenuButton.addEventListener('click', function () {
+    const mobileOpenMenu = document.getElementById("open-menu");
+    mobileOpenMenu.classList.remove('active');
+    produtosContainer.classList.remove('active');
+  });
+
+  closeMenuButtonReceitas.addEventListener('click', function () {
+    const mobileOpenMenu = document.getElementById("open-menu");
+    mobileOpenMenu.classList.remove('active');
+    receitasContainer.classList.remove('active');
+  });
+
+  closeMenuButtonSaibaMais.addEventListener('click', function () {
+    const mobileOpenMenu = document.getElementById("open-menu");
+    mobileOpenMenu.classList.remove('active');
+    saibaMaisContainer.classList.remove('active');
+  });
+
+});
+
 
 // --------------------
 
